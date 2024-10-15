@@ -11,10 +11,6 @@ display: flex;
 font-size:3vh;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-span 
-{
-font-weight:bolder;
-}
 #stateback
 {
 background-color:#B5FFE1;
