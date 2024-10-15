@@ -1,17 +1,16 @@
 let buttons=document.querySelectorAll(".boxes");
 let player1=prompt("Enter Your Name player 1");
-player1=((player1[0].toUpperCase())+(player1.slice(1)));
 let player2;
 let turn1=prompt("What Sign You Want To Take [(X/x)or(o/O)");
 let turn2;
 const declare1=()=>
 {
-const declaration1=`<span style="color:green;" "text-transform:capitalize;" "font-weight:bold;">${player1} </span> Won This Round. Better luck Next Time <span style="color:red;" "text-transform:capitalize;" "font-weight:bold;">${player2} </span>`;
+const declaration1=`<span style="color:green; text-transform:capitalize; font-weight:bold;">${player1} </span> Won This Round. Better luck Next Time <span style="color:red; text-transform:capitalize; font-weight:bold;">${player2} </span>`;
 sessionStorage.setItem("",declaration1);
 }
 const declare2=()=>
 {
-const declaration2=`<span style="color:green; "text-transform:capitalize;" "font-weight:bold;">${player2} </span> Won This Round. Better luck Next Time <span style="color:red;" "text-transform:capitalize;" "font-weight:bold;">${player1}</span>`;
+const declaration2=`<span style="color:green; text-transform:capitalize; font-weight:bold;">${player2} </span> Won This Round. Better luck Next Time <span style="color:red; text-transform:capitalize; font-weight:bold;">${player1}</span>`;
 sessionStorage.setItem("",declaration2);
 }
 if(turn1==="X"||turn1==="x")
@@ -38,7 +37,6 @@ const reload=()=>{
       button.innerText="";
     }
   }
-player2=((player2[0].toUpperCase())+(player2.slice(1)));
 let turn=turn1;
 let reset=document.querySelector("#reset");
 let winpattern=[[0,1,2],
