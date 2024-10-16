@@ -5,12 +5,12 @@ let turn1=prompt("What Sign You Want To Take [(X/x)or(o/O)");
 let turn2;
 const declare1=()=>
 {
-const declaration1=`<span style="color:green; text-transform:capitalize; font-weight:bold;">${player1} </span> Won This Round. Better luck Next Time <span style="color:red; text-transform:capitalize; font-weight:bold;">${player2} </span>`;
+const declaration1=`<span style="color:#00ff00; text-transform:capitalize; font-weight:bold;">${player1} </span> Won This Round. Better luck Next Time ! <span style="color:#ff0000; text-transform:capitalize; font-weight:bold;">${player2} </span>`;
 sessionStorage.setItem("",declaration1);
 }
 const declare2=()=>
 {
-const declaration2=`<span style="color:green; text-transform:capitalize; font-weight:bold;">${player2} </span> Won This Round. Better luck Next Time <span style="color:red; text-transform:capitalize; font-weight:bold;">${player1}</span>`;
+const declaration2=`<span style="color:#00ff00; text-transform:capitalize; font-weight:bold;">${player2} </span> Won This Round. Better luck Next Time ! <span style="color:#ff0000; text-transform:capitalize; font-weight:bold;">${player1}</span>`;
 sessionStorage.setItem("",declaration2);
 }
 if(turn1==="X"||turn1==="x")
