@@ -49,3 +49,16 @@ gap: 1.5vmin;
      width:200px;
      text-align:center;
 }
+.fade-out {
+     opacity: 0;
+     transition: opacity 0.5s ease-out;
+ }
+ .fade-in {
+     opacity: 0;
+     animation: fadeIn 0.5s forwards;
+ }
+ @keyframes fadeIn {
+     to {
+         opacity: 1;
+     }
+ }

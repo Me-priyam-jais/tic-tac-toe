@@ -1,14 +1,20 @@
 let returner=document.querySelector("#page");
 let winstatement=document.querySelector("#winstate");
 returner.addEventListener("click",()=>{
+returner.classList.add("fade-out");
+setTimeout(()=>{
+winstatement.innerText=``;
+returner.classList.remove("fade-in");
 window.location.href="index.html";
-winstatement.innerText=""
+},500);
 });
-document.addEventListener("DOMContentLoaded",(event)=>
+
+document.addEventListener("DOMContentLoaded",()=>
 {
-let upadatedText=sessionStorage.getItem("");
-if(upadatedText)
+let updatedtext=sessionStorage.getItem("");
+if(updatedtext)
 {
-winstatement.innerHTML=upadatedText;
+winstatement.innerHTML=updatedtext;
+winstatement.classList.add("fade-in");
 }
-});
+})
